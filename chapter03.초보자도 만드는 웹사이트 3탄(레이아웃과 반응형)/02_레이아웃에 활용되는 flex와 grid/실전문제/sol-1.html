@@ -24,26 +24,33 @@
             margin: 50px 0;
         }
 
-        .menu > .menu_sub > h2, span {
-            display: inline-block;
-            width: 49%;
+        .menu > .menu_sub {
+            display: flex;
         }
 
-        .menu > .menu_sub > span {
-            display: inline-block;
+        .menu > .menu_sub > h2, .menu > .menu_sub > div  {
+            width: 50%;
+        }
+
+        .menu > .menu_sub > div {
             text-align: right;
+            padding-right: 10px;
+        }
+
+        .new {
+            display: flex;
         }
 
         .new > .new_sub {
-            width: 33%;
-            height: 270px;
-            display: inline-block;
+            margin: 0 0.5%;
+            width: 33.33%;
+            height: 250px;
         }
 
         .new > .new_sub.new_sub1 {
             background: url('./images/webtoon1.png');
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             background-color:bisque;
             background-position: center;
         }
@@ -51,7 +58,7 @@
         .new > .new_sub.new_sub2 {
             background: url('./images/webtoon2.png');
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             background-color:bisque;
             background-position: center;
         }
@@ -59,23 +66,35 @@
         .new > .new_sub.new_sub3 {
             background: url('./images/webtoon3.png');
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             background-color:bisque;
             background-position: center;
         }
 
 
-        /* 모바일 가로, 모바일 세로 (해상도 0px ~ 1024px)*/
-        @media all and (max-width:1024px) { 
-            .wrap {
-                width: 100%;
-            }
 
-            .new > .new_sub {
-                width: 32.5%;
-                height: 150px;
-            }
+    @media all and (min-width:580px) and (max-width:1023px) { 
+        .wrap {
+            width: 100%;
         }
+    }
+
+    @media all and (max-width:579px) { 
+        .wrap {
+            width: 100%;
+        }
+
+        .new {
+            flex-direction: column;
+        }
+
+        .new > .new_sub {
+            margin: 10px 0;
+            width: 100%;
+            height: 300px;
+        }
+    }
+
     </style>
 </head>
 <body>
@@ -83,11 +102,11 @@
         <div class="menu">
             <div class="menu_sub">
                 <h2>이달의 신규 웹툰</h2>
-                <span>
+                <div>
                     <a href="#">
                         신작웹툰 더보기
                     </a>
-                </span>
+                </div>
             </div>
         </div>
         <div class="new">
