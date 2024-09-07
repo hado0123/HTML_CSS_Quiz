@@ -85,6 +85,13 @@
             padding: 1.5px 0;
         }
 
+        .ellipsis {
+            width: 100%; /* 필요한 너비를 설정(필수) */
+            white-space: nowrap; /* 텍스트가 줄 바꿈되지 않도록 설정(필수) */
+            overflow: hidden; /* 넘치는 텍스트를 숨김(필수) */
+            text-overflow: ellipsis; /* 넘치는 텍스트를 말줄임표로 표시(필수) */
+         }
+
     </style>
 </head>
 <body>
@@ -101,29 +108,41 @@
         </div>
         <ul class="new">
             <li class="new_sub">
-                <div class="toon_img1"></div>
+                <a href="#">
+                    <div class="toon_img1">
+                        <img src="./images/new_icon.png" alt="신작" width="30" style="display: inline-block; margin: 5px;">
+                    </div>
+                </a>
                 <div>
                     <a href="#" class="intro" style="font-weight: bold;">웹툰제목</a>
                     <a href="#" class="intro">작가명/작가명/작가명</a>
-                    <p class="intro">줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고</p>
+                    <p class="intro ellipsis">줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고</p>
                 </div>
             </li>
 
             <li class="new_sub">
-                <div class="toon_img2"></div>
+                <a href="#">
+                    <div class="toon_img2">
+                        <img src="./images/new_icon.png" alt="신작" width="30" style="display: inline-block; margin: 5px;">
+                    </div>
+                </a>
                 <div>
                     <a href="#" class="intro" style="font-weight: bold;">웹툰제목</a>
                     <a href="#" class="intro">작가명/작가명/작가명</a>
-                    <p class="intro">줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고</p>
+                    <p class="intro ellipsis">줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고</p>
                 </div>
             </li>
             
             <li class="new_sub">
-                <div class="toon_img3"></div>
+                <a href="#">
+                    <div class="toon_img3">
+                        <img src="./images/new_icon.png" alt="신작" width="30" style="display: inline-block; margin: 5px;">
+                    </div>
+                </a>
                 <div>
                     <a href="#" class="intro" style="font-weight: bold;">웹툰제목</a>
                     <a href="#" class="intro">작가명/작가명/작가명</a>
-                    <p class="intro">줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고</p>
+                    <p class="intro ellipsis">줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 줄거리 줄거리 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고 어쩌고 저쩌고</p>
                 </div>
             </li>
         </ul>
